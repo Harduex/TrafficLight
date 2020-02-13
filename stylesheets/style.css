@@ -1,0 +1,75 @@
+@keyframes red {
+    0% {
+        background: black;
+    }
+    2%, 48% {
+        background: red;
+    }
+    50%, 100%{
+        background: black;
+    }
+}
+@keyframes yellow {
+    0%, 20% {
+        background: black;
+    }
+    22%, 48% {
+        background: yellow;
+    }
+    50%, 80%{
+        background: black;
+    }
+    82%, 100% {
+        background: yellow;
+    }
+}
+@keyframes green {
+    0% {
+        background: black;
+    }
+    2%, 48% {
+        background: black;
+    }
+    50%, 80%{
+        background: green;
+    }
+    82%, 100% {
+        background: black;
+    }
+}
+body {
+    background: cornflowerblue;
+}
+.traffic-light {
+    position: absolute;
+    width: 120px;
+    height: 280px;
+    border: white 5px solid;
+    border-radius: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(78, 78, 78);
+}
+.stand {
+    width: 35px;
+    height: 100px;
+    margin: 0 auto;
+    background-image: linear-gradient(white, cornflowerblue 70%);
+}
+.light {
+    width: 60px;
+    height: 53px;
+    border-radius: 50%;
+    border-top: 7px solid black;
+    margin: 25px auto;
+}
+.red {
+    animation: red 10s linear infinite;
+}
+.yellow {
+    animation: yellow 10s linear infinite;
+}
+.green {
+    animation: green 10s linear infinite;
+}
